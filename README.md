@@ -68,11 +68,7 @@
 
 ## 客户端下载代码
 
-配置好后其它客户端操作流程
-
-下载manifest
-
-	new_client $ git clone ssh://192.168.1.100/android_sdk/manifest.git
+配置好后其它客户端下载代码流程
 
 初始化repo
 
