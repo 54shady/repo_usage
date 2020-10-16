@@ -4,9 +4,9 @@
 
 ## 搭建repo服务器
 
-假设服务器IP : 192.168.1.100
+假设服务器IP : 192.168.1.100, 服务器上用户名myrepo
 
-### SSH KEY配置
+### SSH KEY配置(下面都需要用ssh协议)
 
 客户端配置ssh key后将~/.ssh/id_rsa.pub里的内容拷贝到服务器的~/.ssh/authorized_keys
 
@@ -52,6 +52,10 @@
 在客户端初始化repo
 
 	client $ repo init -u ssh://192.168.1.100/android_sdk/manifest.git
+
+或者需要指定服务器上的用户名才能正确授权
+
+	client $ repo init -u ssh://myrepo@192.168.1.100/android_sdk/manifest.git
 
 上面的命令有异常的话尝试使用清华大学的镜像站点
 
